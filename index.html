@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Colombia - Menu & Reservation</title>
+    <style>
+        :root {
+            --primary-color: #3e2723;
+            --accent-color: #d4a373;
+            --bg-color: #fdfaf7;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(rgba(62, 39, 35, 0.8), rgba(62, 39, 35, 0.8)), url('sora3.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+        }
+        .menu-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .menu-table tr {
+            border-bottom: 1px solid #eee;
+        }
+        .menu-table td {
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        .price {
+            font-weight: bold;
+            color: var(--primary-color);
+            text-align: right;
+        }
+        .order-btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            margin: 30px 0;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .order-btn:hover {
+            transform: scale(1.05);
+            background-color: #128c7e;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .gallery img:hover { transform: translateY(-5px); }
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Café Colombia</h1>
+    <p>Le meilleur café dans une ambiance naturelle</p>
+</header>
+
+<div class="menu-section">
+    <h2>📋 Notre Menu</h2>
+    <table class="menu-table">
+        <tr>
+            <td>☕ Café Noir / Cassé</td>
+            <td class="price">10 DH</td>
+        </tr>
+        <tr>
+            <td>🍃 Thé Marocain</td>
+            <td class="price">10 DH</td>
+        </tr>
+        <tr>
+            <td>🥤 Jus d'Orange Frais</td>
+            <td class="price">15 DH</td>
+        </tr>
+        <tr>
+            <td>🥤 Panaché</td>
+            <td class="price">20 DH</td>
+        </tr>
+        <tr>
+            <td>🍾 Monada (Sodas)</td>
+            <td class="price">7 DH</td>
+        </tr>
+    </table>
+
+    <!-- Bouton pour commander via WhatsApp -->
+    <a href="https://wa.me/212600000000?text=Bonjour, je souhaite commander..." class="order-btn">
+        📱 Commander via WhatsApp
+    </a>
+</div>
+
+<div class="gallery">
+    <img src="sora1.png" alt="Bicyclettes">
+    <img src="sora2.png" alt="Terrasse">
+    <img src="sora3.png" alt="Vue Nature">
+    <img src="sora4.png" alt="Intérieur">
+</div>
+
+<div class="footer">
+    <h2>📍 Emplacement</h2>
+    <p>Café Colombia, [DR TAGHIT OULAD MKOUDOU SEFROU Maroc</p>
+    <p>Ouvert tous les jours de 07:00 à 00:00</p>
+</div>
+
+</body>
+</html>
