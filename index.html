@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Colombia - Menu & Reservation</title>
+    <title>كافي كولومبيا - القائمة والطلبات</title>
     <style>
         :root {
             --primary-color: #3e2723;
@@ -43,12 +43,13 @@
         }
         .menu-table td {
             padding: 15px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            text-align: right;
         }
         .price {
             font-weight: bold;
             color: var(--primary-color);
-            text-align: right;
+            text-align: left !important;
         }
         .order-btn {
             display: inline-block;
@@ -75,12 +76,11 @@
         }
         .gallery img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             border-radius: 10px;
-            transition: 0.3s;
+            border: 2px solid #ddd;
         }
-        .gallery img:hover { transform: translateY(-5px); }
         .footer {
             background-color: var(--primary-color);
             color: white;
@@ -92,52 +92,51 @@
 <body>
 
 <header>
-    <h1>Café Colombia</h1>
-    <p>Le meilleur café dans une ambiance naturelle</p>
+    <h1>مرحباً بكم في كافي كولومبيا</h1>
+    <p>أجود أنواع القهوة في أجواء طبيعية خلابة</p>
 </header>
 
 <div class="menu-section">
-    <h2>📋 Notre Menu</h2>
+    <h2>📋 قائمة المشروبات</h2>
     <table class="menu-table">
         <tr>
-            <td>☕ Café Noir / Cassé</td>
-            <td class="price">10 DH</td>
+            <td>☕ قهوة سوداء / حليب</td>
+            <td class="price">10 درهم</td>
         </tr>
         <tr>
-            <td>🍃 Thé Marocain</td>
-            <td class="price">10 DH</td>
+            <td>🍃 شاي مغربي بالنعناع</td>
+            <td class="price">10 درهم</td>
         </tr>
         <tr>
-            <td>🥤 Jus d'Orange Frais</td>
-            <td class="price">15 DH</td>
+            <td>🥤 عصير برتقال طازج</td>
+            <td class="price">15 درهم</td>
         </tr>
         <tr>
-            <td>🥤 Panaché</td>
-            <td class="price">20 DH</td>
+            <td>🥤 باناشي (فواكه مشكلة)</td>
+            <td class="price">20 درهم</td>
         </tr>
         <tr>
-            <td>🍾 Monada (Sodas)</td>
-            <td class="price">7 DH</td>
+            <td>🍾 مشروبات غازية (مونادة)</td>
+            <td class="price">7 درهم</td>
         </tr>
     </table>
 
-    <!-- Bouton pour commander via WhatsApp -->
-    <a href="https://wa.me/212600000000?text=Bonjour, je souhaite commander..." class="order-btn">
-        📱 Commander via WhatsApp
+    <a href="https://wa.me/212600000000?text=السلام عليكم، أريد طلب..." class="order-btn">
+        📱 اطلب الآن عبر الواتساب
     </a>
 </div>
 
 <div class="gallery">
-    <img src="sora1.png" alt="Bicyclettes">
-    <img src="sora2.png" alt="Terrasse">
-    <img src="sora3.png" alt="Vue Nature">
-    <img src="sora4.png" alt="Intérieur">
+    <img src="sora1.png" alt="مساحة الدراجات">
+    <img src="sora2.png" alt="جلسة خارجية">
+    <img src="sora3.png" alt="إطلالة طبيعية">
+    <img src="sora4.png" alt="المقهى من الداخل">
 </div>
 
 <div class="footer">
-    <h2>📍 Emplacement</h2>
-    <p>Café Colombia, [DR TAGHIT OULAD MKOUDOU SEFROU Maroc</p>
-    <p>Ouvert tous les jours de 07:00 à 00:00</p>
+    <h2>📍 الموقع</h2>
+    <p>كافي كولومبيا - [اكتب هنا اسم المنطقة]، المغرب</p>
+    <p>نستقبلكم يومياً من 07:00 صباحاً إلى 22:00 ليلاً</p>
 </div>
 
 </body>
